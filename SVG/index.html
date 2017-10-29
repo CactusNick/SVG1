@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+
+    <defs>
+        <linearGradient id="square" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#c2c2c2"></stop>
+            <stop offset="50%" stop-color="#666666"></stop>
+            <stop offset="100%" stop-color="#c2c2c2"></stop>
+
+        </linearGradient>
+        <linearGradient id="TV" x1="40%" y1="20%" x2="60%" y2="60%" gradientTransform="rotate(-30)">
+            <stop offset="0%" stop-color="#3e3e3e"></stop>
+            <stop offset="50%" stop-color="#3e3e3e"></stop>
+            <stop offset="50%" stop-color="black"></stop>
+            <stop offset="100%" stop-color="black"></stop>
+        </linearGradient>
+        <radialGradient id="radial" cx="80%" cy="80%">
+            <stop offset="0%" stop-color="#c2c2c2"></stop>
+            <stop offset="50%" stop-color="#666666"></stop>
+            <stop offset="100%" stop-color="#232323"></stop>
+        </radialGradient>
+        <pattern id="circle" width="23" height="23" fill="url(#radial)" patternUnits="userSpaceOnUse">
+            <circle cx="6" cy="17" r="5" stroke="black" fill="radial"></circle>
+            <circle cx="17" cy="6" r="5" stroke="black" fill="radial"></circle>
+        </pattern>
+    </defs>
+
+    <rect x="0" y="0" width="500" height="500" rx="10" ry="10" stroke="black" fill="url(#square)"></rect>
+    <text x="50" y="40" fill="url(#square)" font-family="Arial" font-size="30px" stroke="black">HOMEWORK</text>
+    <rect x="50" y="50" width="400" height="400" rx="10" ry="10" fill="url(#circle)" stroke="black"></rect>
+    <path d="M 85 120  Q 85 85, 110 87 h290 Q 420 87, 420 110
+     v245 Q 420 365, 410 365
+     h-100 v25 h85 v25 h-290 v-25 h85 v-25 h-100 Q 84 365, 84 350 Z" stroke="black" fill="url(#square)"></path>
+    <rect x="103" y="100" width="300" height="250" stroke="black" fill="url(#TV)"></rect>
+    <path id="Academy" d="M 180 195 Q 220 180, 320 260" fill="none"></path>
+    <text fill="white">
+        <textPath xlink:href="#Academy" textLength="150" font-family="Arial" font-size="30"
+                  lengthAdjust="spacingAndGlyphs">IT-Academy
+        </textPath>
+    </text>
+</svg>
+
+</body>
+</html>
